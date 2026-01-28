@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PostSphere</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>PostSphere</h2>
+
+<div class="controls">
+<input id="search" placeholder="Search...">
+
+<select id="mode">
+<option value="full">Full</option>
+<option value="title">Title</option>
+<option value="fuzzy">Fuzzy</option>
+</select>
+
+<label><input type="checkbox" id="long"> Long highlight</label>
+<label><input type="checkbox" id="group"> Group users</label>
+<label><input type="checkbox" id="sort"> Sort by comments</label>
+</div>
+
+<div class="feed" id="feed"></div>
+
+<div class="pager">
+<button id="prev">Prev</button>
+<span id="page"></span>
+<button id="next">Next</button>
+</div>
+
+<div class="modal" id="modal">
+<div class="box" id="box"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
